@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "DLP Extension",
+  "version": "1.0",
+  "description": "Blocks uploads and downloads of certain file types on unapproved websites.",
+  "permissions": ["downloads", "webRequest", "storage", "notifications"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html"
+}
